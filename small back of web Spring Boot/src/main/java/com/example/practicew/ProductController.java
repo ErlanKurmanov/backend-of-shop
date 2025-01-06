@@ -30,7 +30,13 @@ public class ProductController {
 
     @PostMapping("/product")
     public Product addProduct (@RequestBody Product product){
-        return service.addProduct(product);
+        try {
+            Product product1 = service.addProduct(product, imageFile);
+            return new ResponseEntity<>(product1, HttpStatus.CREATED);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+
+        }
     }
 
     //Deleting product
