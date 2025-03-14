@@ -2,6 +2,48 @@
 
 A Spring Boot application for managing an online shop with PostgreSQL database integration.
 
+## 💫 Core Functionality
+
+The application provides a complete e-commerce solution with the following key functionalities:
+
+### 🛍️ Product Management
+- Create, read, update, and delete products
+- Product categorization and search
+- Image upload and management for products
+- Product inventory tracking
+
+### 👥 User Management
+- User registration and profile management
+- User authentication and authorization
+- User role management
+
+### 🛒 Shopping Cart
+- Add/remove items to shopping cart
+- Update quantities in cart
+- Cart item management
+- Cart total calculation
+
+### 📦 Order Processing
+- Create and manage orders
+- Order status tracking
+- Order history viewing
+- Process order payments
+
+### 🗂️ Category Management
+- Create and manage product categories
+- Category hierarchy
+- Product-category associations
+
+### 🖼️ Image Handling
+- Upload product images
+- Image storage and retrieval
+- Image association with products
+
+### 🛡️ Security
+- Secure API endpoints
+- User authentication
+- Role-based access control
+
 ## 🚀 Features
 
 - RESTful API endpoints for shop management
